@@ -1,0 +1,34 @@
+{
+  "plugins": ["plugins/markdown"],
+  "recurseDepth": 10,
+  "opts": {
+    "template": "./node_modules/tui-jsdoc-template",
+    "destination": "./docs",
+    "recurse": true
+  },
+  "source": {
+    "include": ["packages/lit-base", "packages/lit-cli", "packages/lit-helpers", "packages/lit-mixins"]
+  },
+  "sourceType": "module",
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc"]
+  },
+  "templates": {
+    "logo": {
+      "url": "https://www.exmachinagroup.com/images/svg/ExMachinaPrimary.svg",
+      "width": "100px",
+      "height": "50px",
+      "link": ""
+    },
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "name": "",
+    "footerText": "",
+    "useCollapsibles": true,
+    "tabNames": {
+      "api": "Documentation",
+      "tutorials": "Demos"
+    }
+  }
+}

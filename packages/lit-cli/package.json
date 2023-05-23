@@ -1,0 +1,50 @@
+{
+  "name": "@exmg/lit-cli",
+  "type": "module",
+  "version": "1.1.7",
+  "description": "Exmachina's CLI helper with Lit projects",
+  "keywords": [
+    "Lit",
+    "CLI",
+    "Exmg"
+  ],
+  "author": "rdrgcnn <rodrigue@exmachina.nl>",
+  "homepage": "https://bitbucket.org/exmachina/exmg-lit-utils/packages/lit-cli#readme",
+  "license": "ISC",
+  "main": "./index.js",
+  "files": [
+    "**/*.js",
+    "**/*.d.ts",
+    "**/*.tmpl"
+  ],
+  "bin": {
+    "exmg-lit-cli": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://rdrgcnn@bitbucket.org/exmachina/exmg-lit-utils.git"
+  },
+  "scripts": {},
+  "bugs": {
+    "url": "https://bitbucket.org/exmachina/exmg-lit-utils/issues"
+  },
+  "dependencies": {
+    "command-line-args": "^5.2.1",
+    "command-line-usage": "^6.1.3",
+    "commander": "^10.0.0",
+    "inquirer": "^9.1.4",
+    "node-sass-import": "^2.0.1",
+    "node-watch": "^0.7.3",
+    "replace": "^1.2.2",
+    "sass": "^1.57.1",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.11.18",
+    "@types/shelljs": "^0.8.11"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}

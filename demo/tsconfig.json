@@ -1,0 +1,24 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": ".",
+    "outDir": ".",
+    "tsBuildInfoFile": ".tsbuildinfo"
+  },
+  "references": [
+    {
+      "path": "../packages/lit-base"
+    },
+    {
+      "path": "../packages/lit-cli"
+    },
+    {
+      "path": "../packages/lit-helpers"
+    },
+    {
+      "path": "../packages/lit-controllers"
+    }
+  ],
+  "include": ["./src/*.ts", "./src/styles/*.ts", "./demos/**/*.ts"]
+}
