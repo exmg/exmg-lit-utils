@@ -24,6 +24,7 @@
     "format:prettier": "prettier \"packages/**/*.ts\" --write --ignore-path .gitignore",
     "format": "npm run format:eslint && npm run format:prettier",
     "start": "npm run build && npm run build:demo-styles && web-dev-server ./demos/index.html",
+    "version": "lerna version",
     "start:docs": "web-dev-server /docs/index.html"
   },
   "devDependencies": {
@@ -42,7 +43,7 @@
     "eslint-plugin-wc": "^1.3.2",
     "del-cli": "^3.0.1",
     "jsdoc": "^3.6.10",
-    "lerna": "^5.1.8",
+    "lerna": "^6.5.1",
     "lit": "^2.0.2",
     "prettier": "^2.8.3",
     "rollup": "^2.57.0",
