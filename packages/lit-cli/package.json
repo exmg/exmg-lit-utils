@@ -45,6 +45,6 @@
     "@types/shelljs": "^0.8.11"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   }
 }
