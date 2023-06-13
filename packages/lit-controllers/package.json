@@ -20,7 +20,7 @@
     "directory": "packages/lit-controllers"
   },
   "dependencies": {
-    "@exmg/lit-base": "^1.1.8",
+    "@exmg/lit-base": "file:../lit-base",
     "@material/mwc-icon-button": "^0.27.0"
   },
   "publishConfig": {

@@ -1,5 +1,8 @@
 {
   "name": "exmg-lit-utils",
+  "workspaces": [
+    "packages/*"
+  ],
   "private": true,
   "description": "Utils packages destined to help LitElement development throughout ExMachina",
   "license": "MIT",
@@ -43,7 +46,7 @@
     "eslint-plugin-wc": "^1.3.2",
     "del-cli": "^3.0.1",
     "jsdoc": "^3.6.10",
-    "lerna": "^6.5.1",
+    "lerna": "^7.0.0",
     "lit": "^2.0.2",
     "prettier": "^2.8.3",
     "rollup": "^2.57.0",
