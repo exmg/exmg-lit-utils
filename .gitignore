@@ -30,6 +30,7 @@ package-lock.json
 /demo/*.tsbuildinfo
 **/*.tsbuildinfo*
 !packages/**/custom_types/**
+yarn.lock
 
 ## temp folders
 /.tmp/

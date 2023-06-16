@@ -16,10 +16,6 @@
     "build:demo": "rollup --config ./rollup.config.js",
     "build:demo-styles": "node ./packages/lit-cli/index.js sass -f ./demo/**/*.scss",
     "build:docs": "npm run build && rm -rf ./docs && npm run build:demo && ./node_modules/.bin/jsdoc -c ./jsdoc.conf.json -R readme.md && node ./scripts/processDemoInDocumentation.js",
-    "bootstrap": "run-script-os",
-    "bootstrap:windows": "./scripts/bootstrap-win.sh",
-    "bootstrap:default": "./scripts/bootstrap.sh",
-    "postinstall": "npm run bootstrap",
     "lint": "npm run lint:eslint && npm run lint:prettier",
     "lint:prettier": "prettier \"packages/**/*.ts\" --check --ignore-path .gitignore",
     "lint:eslint": "eslint --ext .ts,.html .",
@@ -27,7 +23,6 @@
     "format:prettier": "prettier \"packages/**/*.ts\" --write --ignore-path .gitignore",
     "format": "npm run format:eslint && npm run format:prettier",
     "start": "npm run build && npm run build:demo-styles && web-dev-server ./demos/index.html",
-    "version": "lerna version",
     "start:docs": "web-dev-server /docs/index.html"
   },
   "devDependencies": {
