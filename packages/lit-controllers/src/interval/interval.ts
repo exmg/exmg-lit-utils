@@ -2,6 +2,7 @@ import {ReactiveControllerHost} from 'lit';
 
 export type IntervalModeType = 'MANUAL' | 'AUTO';
 
+// Controller Configguration
 export interface IntervalControllerConfig {
   callback?: () => void;
   mode?: IntervalModeType;
