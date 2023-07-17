@@ -69,7 +69,7 @@
     "node-watch": "^0.7.3",
     "redux": "^4.2.0",
     "replace": "^1.2.2",
-    "sass": "^1.57.1",
+    "sass": "1.57.1",
     "shelljs": "^0.8.5",
     "web-animations-js": "^2.3.1"
   }
