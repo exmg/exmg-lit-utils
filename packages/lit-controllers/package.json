@@ -20,10 +20,11 @@
     "directory": "packages/lit-controllers"
   },
   "dependencies": {
-    "@exmg/lit-base": "file:../lit-base",
+    "@exmg/lit-base": "^2.0.0",
     "lit": "^3.0.0"
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "b2d5e0eabf1fe48a4278e290446abb90fce01f15"
 }
