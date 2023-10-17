@@ -1,7 +1,7 @@
 {
   "name": "@exmg/lit-cli",
   "type": "module",
-  "version": "1.1.13",
+  "version": "2.0.0",
   "description": "Exmachina's CLI helper with Lit projects",
   "keywords": [
     "Lit",
@@ -29,11 +29,11 @@
     "url": "https://bitbucket.org/exmachina/exmg-lit-utils/issues"
   },
   "dependencies": {
-    "lit": "^3.0.0",
     "command-line-args": "^5.2.1",
     "command-line-usage": "^6.1.3",
     "commander": "^10.0.0",
     "inquirer": "^9.1.4",
+    "lit": "^3.0.0",
     "node-sass-import": "^2.0.1",
     "node-watch": "^0.7.3",
     "replace": "^1.2.2",
