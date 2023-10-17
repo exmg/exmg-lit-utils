@@ -21,7 +21,7 @@
     "**/*.d.ts"
   ],
   "dependencies": {
-    "lit": "^2.6.1",
+    "lit": "^3.0.0",
     "redux": "^4.2.0"
   },
   "publishConfig": {
