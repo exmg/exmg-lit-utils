@@ -1,4 +1,4 @@
-# @exmg/lit-controllers
+# Exmg Lit Utils @exmg/lit-controllers
 
 ## Content
 

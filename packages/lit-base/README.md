@@ -1,4 +1,4 @@
-# @exmg/lit-base
+# Exmg Lit Utils @exmg/lit-base
 
 ## Content
 

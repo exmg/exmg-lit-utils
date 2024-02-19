@@ -1,4 +1,4 @@
-# @exmg/lit-helpers
+# Exmg Lit Utils @exmg/lit-helpers
 
 ## Content
 
