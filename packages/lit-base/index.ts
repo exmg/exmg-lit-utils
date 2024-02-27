@@ -1,6 +1,6 @@
 export {Observer, observer} from './src/observer.js';
 export {ConnectInterface, connectStore, getConnectedStore} from './src/connect.js';
-export {connect as connectMixin} from './src/connect-mixin.js';
+export {connect as connectedMixin} from './src/connect-mixin.js';
 export {ExmgElement} from './src/exmg-element.js';
 export {ConnectedLitElement} from './src/connected-lit-element.js';
 export {Constructor} from './src/utils/types.js';
