@@ -1,6 +1,6 @@
 {
   "name": "@exmg/lit-helpers",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Package aimed to expose helpers function for CMS development",
   "keywords": [
     "Lit",
