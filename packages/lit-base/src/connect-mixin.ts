@@ -1,56 +1,47 @@
 import {Store, Unsubscribe} from 'redux';
 import {getConnectedStore} from './connect';
+import {LitElement} from 'lit';
 
-type Constructor<T> = new (...args: any[]) => T;
+export type Constructor<T> = new (...args: any[]) => T;
 
-interface CustomElement {
-  connectedCallback?(): void;
-  disconnectedCallback?(): void;
-  readonly isConnected: boolean;
-}
+export abstract class ConnectedClass extends LitElement {}
 
-interface ConnectOptions {
-  isPage?: boolean;
-  debug?: boolean;
-}
+export const connectedMixin = <S, T extends Constructor<LitElement & ConnectedClass>>(baseElement: T) => {
+  class Connected extends baseElement {
+    routeDebug = false;
+    isPage = false;
+    storeUnsubscribe?: Unsubscribe;
 
-export const connect =
-  <S>(connectOptions?: ConnectOptions) =>
-  <T extends Constructor<CustomElement>>(baseElement: T) =>
-    class extends baseElement {
-      routeDebug = false;
-      isPage = !!connectOptions?.isPage;
-      storeUnsubscribe?: Unsubscribe;
+    getStore(): Store<S, any> {
+      return getConnectedStore();
+    }
 
-      getStore(): Store<S, any> {
-        return getConnectedStore();
-      }
+    connectedCallback() {
+      super.connectedCallback();
 
-      connectedCallback() {
-        if (super.connectedCallback) {
-          super.connectedCallback();
-        }
-
-        this.storeUnsubscribe = this.getStore().subscribe(() => {
-          this.stateChanged(this.getStore().getState());
-          this._stateChanged && this._stateChanged(this.getStore().getState());
-        });
+      this.storeUnsubscribe = this.getStore().subscribe(() => {
         this.stateChanged(this.getStore().getState());
         this._stateChanged && this._stateChanged(this.getStore().getState());
-      }
+      });
+      this.stateChanged(this.getStore().getState());
+      this._stateChanged && this._stateChanged(this.getStore().getState());
+    }
 
-      disconnectedCallback() {
-        this.storeUnsubscribe && this.storeUnsubscribe();
-        if (super.disconnectedCallback) {
-          super.disconnectedCallback();
-        }
-      }
+    disconnectedCallback() {
+      this.storeUnsubscribe && this.storeUnsubscribe();
 
-      stateChanged(state: S) {
-        if (this.routeDebug) {
-          console.log('stateChanged', state);
-        }
-      }
+      super.disconnectedCallback();
+    }
 
-      _stateChanged?(state: S): void;
-    };
+    stateChanged(state: S) {
+      console.log('stateChanged not implemented', state);
+    }
+
+    _stateChanged?(state: S): void;
+  }
+
+  return Connected as Constructor<{
+    getStore(): Store<S, any>;
+  }> &
+    T;
+};

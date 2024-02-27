@@ -4,6 +4,7 @@ import {customElement} from 'lit/decorators/custom-element.js';
 import './observer-demo.js';
 import './exmg-element-demo.js';
 import './connected-element.js';
+import './test-connected-mixin.js';
 import '../../src/code-snippet.js';
 import demoStyles from '../../src/demo-app-css.js';
 
@@ -115,6 +116,8 @@ export class LitBaseDemo extends LitElement {
         <h3>Connect store & ConnectedLitElement</h3>
         <connected-element-demo></connected-element-demo>
         <code-snippet code=${connectedElementCode}></code-snippet>
+
+        <test-connected-demo></test-connected-demo>
       </div>
     `;
   }
