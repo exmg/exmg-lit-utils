@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@exmg/eslint-config-lit": "^1.0.24",
+    "@material/typography": "^14.0.0",
     "@exmg/prettier-config": "^1.0.23",
     "@rollup/plugin-node-resolve": "^13.0.5",
     "@rollup/plugin-strip": "^2.1.0",
@@ -52,7 +53,6 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
-    "@material/typography": "^14.0.0",
     "@sentry/browser": "^7.30.0",
     "@types/inquirer": "^9.0.3",
     "@types/node": "^18.11.18",

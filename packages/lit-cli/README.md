@@ -1,4 +1,4 @@
-# @exmg/lit-cli
+# Exmg Lit Utils @exmg/lit-cli
 
 ## Content
 
