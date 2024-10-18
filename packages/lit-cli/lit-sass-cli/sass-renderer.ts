@@ -27,12 +27,14 @@ const templateFile = path.join(__dirname, './sass-template.tmpl');
 
 export async function sassRender(sourceFile) {
   console.log('Source file', sourceFile);
+
   const template = await readFile(templateFile, 'utf-8');
   const match = delimiter.exec(template);
   if (!match) {
     throw new Error(`Template file ${templateFile} did not contain template delimiters`);
   }
   console.log(`Processing ${sourceFile}`);
+
   const replacement = await sassToCss(sourceFile);
   const newContent = template.replace(delimiter, replacement);
   const outputFile = sourceFile.replace('.scss', '-css.ts').replace('scss', 'src/styles');
