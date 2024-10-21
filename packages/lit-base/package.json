@@ -1,6 +1,6 @@
 {
   "name": "@exmg/lit-base",
-  "version": "2.0.5",
+  "version": "3.0.0",
   "description": "Lit Base Elements for ExMachina",
   "keywords": [
     "Lit",
@@ -21,8 +21,8 @@
     "**/*.d.ts"
   ],
   "dependencies": {
-    "lit": "^3.0.0",
-    "@reduxjs/toolkit": "^2.2.8"
+    "@reduxjs/toolkit": "^2.2.8",
+    "lit": "^3.0.0"
   },
   "publishConfig": {
     "access": "public"
