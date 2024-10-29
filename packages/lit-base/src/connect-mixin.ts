@@ -6,6 +6,11 @@ export type Constructor<T> = new (...args: any[]) => T;
 
 export abstract class ConnectedClass extends LitElement {}
 
+/**
+ * This mixin will connect the element to the redux store
+ * @param baseElement The base element to extend
+ * @returns
+ */
 export const connectedMixin = <S, T extends Constructor<LitElement & ConnectedClass>>(baseElement: T) => {
   class Connected extends baseElement {
     routeDebug = false;
