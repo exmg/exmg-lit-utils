@@ -11,7 +11,7 @@ Clean repo of:
 
 `yarn clean`
 
-## Install and bootstrap packages
+## Install packages
 
 `yarn install`
 
