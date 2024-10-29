@@ -42,6 +42,7 @@ export const connectedMixin = <S, T extends Constructor<LitElement & ConnectedCl
 
   return Connected as Constructor<{
     getStore(): Store<S, any>;
+    stateChanged(state: S): void;
   }> &
     T;
 };
