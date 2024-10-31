@@ -38,9 +38,7 @@ export const connectedMixin = <S, T extends Constructor<LitElement & ConnectedCl
       super.disconnectedCallback();
     }
 
-    stateChanged(state: S) {
-      console.log('stateChanged not implemented', state);
-    }
+    stateChanged(_: S) {}
 
     _stateChanged?(state: S): void;
   }
