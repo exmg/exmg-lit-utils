@@ -1,6 +1,6 @@
 {
   "name": "@exmg/lit-controllers",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Exmg Lit Controllers",
   "keywords": [
     "Lit",
@@ -20,7 +20,7 @@
     "directory": "packages/lit-controllers"
   },
   "dependencies": {
-    "@exmg/lit-base": "^3.0.2",
+    "@exmg/lit-base": "^3.0.3",
     "lit": "^3.0.0"
   },
   "publishConfig": {
