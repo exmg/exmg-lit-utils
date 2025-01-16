@@ -1,7 +1,7 @@
 {
   "name": "@exmg/lit-cli",
   "type": "module",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Exmachina's CLI helper with Lit projects",
   "keywords": [
     "Lit",
