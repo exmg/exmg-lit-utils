@@ -12,7 +12,7 @@ program.name('exmg-lit-cli').description('ExMachina CLI to Lit Element and CMS u
 
 program
   .command('sass')
-  .description('Helper command to convert SASS files into Lit CSS')
+  .description('Helper command to convert SASS files into Lit CSS.')
   .option('-f, --files <files...>', 'Process the given SASS files')
   .action((options) => {
     if (!options.files) {
